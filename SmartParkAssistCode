@@ -1,3 +1,16 @@
+/*
+==========================================================
+ Project Title : Smart Park Assist
+ Subtitle      : IoT-Based Parking Distance Monitoring System
+ Developer     : Ashwath H
+ Branch        : Electronics and Communication Engineering
+ Description   : Smart Park Assist is a real-time parking
+                 assistance system using ESP32 and ultrasonic
+                 sensor to measure distance and provide LED
+                 alerts with live WiFi web dashboard display.
+==========================================================
+*/
+
 #include <WiFi.h>
 #include <WebServer.h>
 
@@ -47,7 +60,7 @@ void setup() {
   pinMode(LED5, OUTPUT);
 
   // Set AP Credentials
-  WiFi.softAP("ESP32", "Ashwath H");
+  WiFi.softAP("SET WIFI ACCESSPOINT NAME", "SET YOUR PASSWORD");
   
   server.on("/", handleRoot);
   server.begin();
